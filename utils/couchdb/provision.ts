@@ -167,8 +167,13 @@ export async function provisionCouchDB(
       action: "enable_single_node",
       username,
       password,
+<<<<<<< HEAD
       bind_address: "::",
       port: 8433,
+=======
+      bind_address: "0.0.0.0",
+      port: 5984,
+>>>>>>> parent of 873e3dcc (Change CouchDB port from 5984 to 8433)
       singlenode: true,
     }),
     "POST",
