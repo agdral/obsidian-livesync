@@ -168,7 +168,7 @@ export async function provisionCouchDB(
       username,
       password,
       bind_address: "0.0.0.0",
-      port: 5984,
+      port: 8433,
       singlenode: true,
     }),
     "POST",
