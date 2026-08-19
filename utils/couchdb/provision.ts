@@ -31,7 +31,7 @@ function requireValue(value: string, name: string): string {
 }
 
 function normaliseHostname(hostname: string): string {
-  const parsed = new URL(hostname));
+  const parsed = new URL(requireValue(hostname, "hostname"));
   parsed.pathname = parsed.pathname.replace(/\/+$/, "");
   parsed.search = "";
   parsed.hash = "";
